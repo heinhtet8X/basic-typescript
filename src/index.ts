@@ -1,8 +1,9 @@
-// const samll = 1;
-// const medium = 2;
-// const large = 3;
+function calcuValue(income: number, year: number = 2023): number {
+    if (year == 2023)
+        return income + 100;
+    return income + 10;
+}
 
-const enum Size { Samll = 3, Medium, Large };
-let size: Size = Size.Medium;
+let x = calcuValue(1, 2022);
 
-console.log(size);
+console.log(x);
