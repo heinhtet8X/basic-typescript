@@ -1,4 +1,2 @@
-let strings: string[] = ['1', '2', '3'];
-let numbers: number[] = [1, 2, 3, 4];
-let anyArr: string[] = [];
-anyArr[0] = '1';
+let user: [number, string, boolean, number] = [1, 'Hein Htet', true, 0];
+
