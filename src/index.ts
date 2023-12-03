@@ -1,9 +1,13 @@
-function calcuValue(income: number, year: number = 2023): number {
-    if (year == 2023)
-        return income + 100;
-    return income + 10;
-}
-
-let x = calcuValue(1, 2022);
-
-console.log(x);
+const me: {
+    readonly id: number,
+    name: string,
+    work?: string,
+    age: (date: string) => void
+} = {
+    id: 1,
+    name: 'HHA',
+    work: 'DEV',
+    age: (date: string) => {
+        console.log(date);
+    }
+};

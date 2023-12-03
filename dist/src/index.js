@@ -1,9 +1,6 @@
 "use strict";
-function calcuValue(income, year = 2023) {
-    if (year == 2023)
-        return income + 100;
-    return income + 10;
-}
-let x = calcuValue(1, 2022);
-console.log(x);
+const me = { id: 1, name: 'HHA', work: 'DEV', age: (date) => {
+        console.log(date);
+    } };
+console.log(me.age('10'));
 //# sourceMappingURL=index.js.map
