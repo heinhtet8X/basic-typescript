@@ -1,9 +1,4 @@
-let sales: number = 1500;
-let course: string = 'TypeScript';
-let is_published = true;
-let level;
-
-const helloWorld = (doc: any) => {
-    console.log(doc);
-    
-}
+let strings: string[] = ['1', '2', '3'];
+let numbers: number[] = [1, 2, 3, 4];
+let anyArr: string[] = [];
+anyArr[0] = '1';
