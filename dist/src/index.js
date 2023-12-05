@@ -1,6 +1,11 @@
 "use strict";
-const me = { id: 1, name: 'HHA', work: 'DEV', age: (date) => {
-        console.log(date);
-    } };
-console.log(me.age('10'));
+let start = {
+    apply: () => { },
+    create: (num) => {
+        return `${num.toString()} kg`;
+    },
+    remove: () => { },
+};
+let x = start.create(20);
+console.log(x);
 //# sourceMappingURL=index.js.map

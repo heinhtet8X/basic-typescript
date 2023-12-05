@@ -1,29 +1,22 @@
-type User = {
-    readonly id: number,
-    name: string,
-    work?: string,
-    age: (date: string) => void
+type Applyable = {
+    apply: () => void,
+    create: (num: number) => void
 }
 
-// const me: {
-//     readonly id: number,
-//     name: string,
-//     work?: string,
-//     age: (date: string) => void
-// } = {
-//     id: 1,
-//     name: 'HHA',
-//     work: 'DEV',
-//     age: (date: string) => {
-//         console.log(date);
-//     }
-// };
+type Removeable = {
+    remove: () => void
+}
 
-const user: User = {
-    id: 1,
-    name: 'HHA',
-    work: 'DEV',
-    age: (date: string) => {
-        console.log(date);
-    }
-};
+type Booking = Applyable & Removeable;
+
+let start: Booking = {
+    apply: () => { },
+    create: (num) : string => {
+        return  `${num.toString()} success.`;
+    },
+    remove: () => { },
+}
+
+let x = start.create(20);
+
+console.log(x);
