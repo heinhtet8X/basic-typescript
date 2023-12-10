@@ -1,22 +1,11 @@
-type Applyable = {
-    apply: () => void,
-    create: (num: number) => void
+type User = {
+    name: string,
+    age: number
 }
 
-type Removeable = {
-    remove: () => void
+function getUserName(user: User) {
+    return user.name;
 }
 
-type Booking = Applyable & Removeable;
-
-let start: Booking = {
-    apply: () => { },
-    create: (num) : string => {
-        return  `${num.toString()} success.`;
-    },
-    remove: () => { },
-}
-
-let x = start.create(20);
-
+const x = getUserName({ name: 'Hein', age : 20 });
 console.log(x);

@@ -1,11 +1,7 @@
 "use strict";
-let start = {
-    apply: () => { },
-    create: (num) => {
-        return `${num.toString()} kg`;
-    },
-    remove: () => { },
-};
-let x = start.create(20);
+function getUserName(user) {
+    return user.name;
+}
+const x = getUserName({ name: 'Hein', age: 20 });
 console.log(x);
 //# sourceMappingURL=index.js.map
