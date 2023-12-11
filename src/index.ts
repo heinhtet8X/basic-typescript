@@ -1,11 +1,11 @@
-type User = {
+interface Person {
     name: string,
-    age: number
+    age: 20,
 }
 
-function getUserName(user: User) {
-    return user.name;
+const person: Person = {
+    name: "Hein",
+    age: 20
 }
 
-const x = getUserName({ name: 'Hein', age : 20 });
-console.log(x);
+console.log(person.name);

@@ -1,7 +1,7 @@
 "use strict";
-function getUserName(user) {
-    return user.name;
-}
-const x = getUserName({ name: 'Hein', age: 20 });
-console.log(x);
+const person = {
+    name: "Hein",
+    age: 20
+};
+console.log(person.name);
 //# sourceMappingURL=index.js.map
