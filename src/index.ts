@@ -9,3 +9,5 @@ const person: Person = {
 }
 
 console.log(person.name);
+console.log('hello');
+

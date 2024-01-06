@@ -17,4 +17,9 @@ class User {
 const user = new User();
 let x = user.create(users);
 console.log(x);
+function allowMethod(user) {
+    if (typeof user == 'string')
+        return true;
+    return false;
+}
 //# sourceMappingURL=app.js.map
